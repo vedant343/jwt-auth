@@ -35,9 +35,10 @@ function showAlert(formId, message, type) {
   alertDiv.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
   console.log(`Alert shown [${formId}] (${type}):`, message);
 }
-
+// html class id -> formid
 function setLoading(formId, isLoading) {
   const form = document.getElementById(formId);
+  // btn is the button that is used to submit the form
   const btn = form.querySelector(".btn");
 
   if (isLoading) {
