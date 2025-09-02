@@ -8,11 +8,11 @@ if (accessToken && refreshToken) {
   console.log("Existing tokens found. Checking auth status...");
   checkAuthStatus();
 }
-
+// it basically toggles the login and signup form 
 function toggleForms() {
   const loginForm = document.getElementById("loginForm");
   const signupForm = document.getElementById("signupForm");
-
+  // 
   const showingLogin = loginForm.classList.contains("hidden");
   if (showingLogin) {
     loginForm.classList.remove("hidden");
